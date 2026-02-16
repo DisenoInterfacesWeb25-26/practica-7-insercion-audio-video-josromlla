@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Jose Antonio Romero">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Bootstrap</title>
+    <!-- Enlace al archivo CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- cada row contiene 12 columnas-->
+
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid ">
+                <img src="https://www.eniun.com/wp-content/uploads/ENIUN@2x.png" class="rounded" alt="Eniun" width="30"
+                    height="24">
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">SEO</a></li>
+                                <li><a class="dropdown-item" href="#">Desarrollo Web</a></li>
+                                <li><a class="dropdown-item" href="#">Marketing Online</a></li>
+                                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                                <li><a class="dropdown-item" href="./tabla.html">Tabla</a></li>
+                                <li><a class="dropdown-item" href="./controlVideo.html">Control de video</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-none d-lg-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Búsqueda" />
+                        <button class="btn btn-outline-success bg-info text-white" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.eniun.com/wp-content/uploads/ENIUNCreatividadDiseno.png" class="d-block w-100"
+                        alt="img1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.eniun.com/wp-content/uploads/ENIUNCreatividadSocialNetwork.png"
+                        class="d-block w-100" alt="img2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.eniun.com/wp-content/uploads/ENIUNCreatividadSeo.png" class="d-block w-100"
+                        alt="img3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="row p-5 mb-3 mt-3">
+
+            <h1 class="display-3 text-center">Artículos</h1>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.eniun.com/wp-content/uploads/contenido-incrustado.png" class="card-img-top"
+                        alt="imagen factores">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <video src="./video.mp4" width=250 height=150 type="video/mp4" autoplay></video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.eniun.com/wp-content/uploads/contenido-incrustado.png" class="card-img-top"
+                        alt="imagen factores">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <!--ogg no funciona-->
+                        <video src="./video.ogv" width=250 height=150 type="video/ogg" controls
+                            codecs="theora, vorbis"></video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.eniun.com/wp-content/uploads/contenido-incrustado.png" class="card-img-top"
+                        alt="imagen factores">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <video src="./video.webm" width=250 height=150 type="video/webm" autoplay></video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 mb-3 mt-3">
+                mp3
+                <audio src="./F458.mp3" controls></audio>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mt-3">
+                ogg
+                <audio src="./F458.ogg" controls></audio>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-info p-3 mb-3 border border-black border-opacity-25 text-white">Enium.com</div>
+            </div>
+        </div>
+    </div>
+    <!-- Enlace a los archivos JavaScript de Bootstrap 5 por separado, popper debe ir primero (popper.js y bootstrap.min.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

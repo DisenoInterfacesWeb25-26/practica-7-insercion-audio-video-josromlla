@@ -1,0 +1,16 @@
+#medio {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    #medio {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #medio {
+        max-width: 1000px;
+    }
+}
